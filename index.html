@@ -29,62 +29,92 @@
                         <img class="header-menu__img" src="img/logo.png" alt="logo">BRAN<span
                             class="header-menu__logo--stile--d">D</span>
                     </a>
-                    <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Browse</button>
-                        <ul class="dropdown-menu">
-                            <h3 class="dropdown-menu--stile"><a class="dropdown-item" href="#">Women</a></h3>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Dresses</a></li>
-                            <li><a class="dropdown-item" href="#">Tops</a></li>
-                            <li><a class="dropdown-item" href="#">Sweaters/Knits</a></li>
-                            <li><a class="dropdown-item" href="#">Blazers</a></li>
-                            <li><a class="dropdown-item" href="#">Denim</a></li>
-                            <li><a class="dropdown-item" href="#">Leggings/Pants</a></li>
-                            <li><a class="dropdown-item" href="#">Skirts/Shorts</a></li>
-                            <li><a class="dropdown-item" href="#">Accessories</a></li>
-                            <h3 class="dropdown-menu--stile"><a class="dropdown-item" href="#">Men</a></h3>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Tees/Tank tops</a></li>
-                            <li><a class="dropdown-item" href="#">Shirts/Polos</a></li>
-                            <li><a class="dropdown-item" href="#">Sweaters</a></li>
-                            <li><a class="dropdown-item" href="#">Sweatshirts/Hoodies</a></li>
-                            <li><a class="dropdown-item" href="#">Blazers</a></li>
-                            <li><a class="dropdown-item" href="#">Jackets/vests</a></li>
-                        </ul>
-                        <input type="text" class="form-control" aria-label="Text input with dropdown button"
-                            placeholder="Search for Item...">
-                        <button class="btn btn-outline-secondary btn--bg" type="button" id="button-addon2"><i
-                                class="fa fa-search" aria-hidden="true"></i></button>
+                    <div class="form-search">
+                        <div id="filter-input" class="groupinput">
+                            <button class="filterbuttom">Browse <i class="fa fa-caret-down"
+                                    aria-hidden="true"></i></button>
+                            <ul class="dropdown-menu">
+                                <h2 class="dropdown-menu--stile"><a class="dropdown-item" href="#">Women</a></h3>
+                                    <hr class="dropdown-divider dropdown-divider-style">
+                                    <li class="li-item"><a class="drop-item" href="#">Dresses</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Tops</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Blazers</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Denim</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Leggings/Pants</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Accessories</a></li>
+                                    <h3 class="dropdown-menu--stile"><a class="dropdown-item" href="#">Men</a></h3>
+                                    <hr class="dropdown-divider dropdown-divider-style ">
+                                    <li class="li-item"><a class="drop-item" href="#">Tees/Tank tops</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Shirts/Polos</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweaters</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweatshirts/Hoodies</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Blazers</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Jackets/vests</a></li>
+                            </ul>
+                        </div>
+
+                        <input type="text" class="form-cont" placeholder="Search for Item...">
+                        <button class="search-button" type="button" aria-hidden="true"><i class="fa fa-search"
+                                aria-hidden="true"></i></button>
+
+
                     </div>
+
                 </div>
+
 
                 <div class="flex-box-2">
                     <div class="header-r-block">
                         <a class="header-r-block__link" href="#"><i class="fa fa-shopping-cart fa-2x"
                                 aria-hidden="true"></i></a>
                     </div>
-                    <div class="details-div-style">
-                        <details class="header-r-block__details header-r-block__details--style">
-                            <summary class="header-r-block__details header-r-block__details--summary">
-                                My Account
-                            </summary>
-                        </details>
+                    <div id="button-basket" class="goods">
+                        <button class="filterbuttom__bc filterbuttom--basket-card">My Account <i
+                                class="fa fa-caret-down marker" aria-hidden="true"></i></button>
+                        <div class="box-goods">
+                            u900
+
+                        </div>
+
+
 
                     </div>
 
 
                 </div>
 
+
             </div>
 
-
         </div>
+
+
     </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script>
+        let goodsElem = document.getElementById('button-basket');
+        let filterbuttom__bcElem = goodsElem.querySelector('.filterbuttom__bc');
+
+        filterbuttom__bcElem.onclick = function () {
+            goodsElem.classList.toggle('open');
+        };
+    </script>
+    <script>
+        let groupinputElem = document.getElementById('filter-input');
+        let filterbuttomElem = groupinputElem.querySelector('.filterbuttom');
+
+        filterbuttomElem.onclick = function () {
+            groupinputElem.classList.toggle('open');
+        };
+    </script>
 </body>
 
 </html>
