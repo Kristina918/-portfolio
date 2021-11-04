@@ -70,11 +70,14 @@ body {
 
 .box-goods {
   position: absolute;
-  background-color: yellow;
   width: 262px;
   height: 440px;
   border-radius: 5px;
   margin-right: 5px;
+  padding-top: 1.25em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 1.25em;
 }
 
 .goods .box-goods {
@@ -148,6 +151,15 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   border: 1px solid #f16d7f;
+}
+
+.filterbuttom--new-size {
+  min-width: 97.85%;
+  min-height: 3.125em;
+}
+
+.filterbuttom--new-margin {
+  margin-bottom: 0.625em;
 }
 
 .fa-caret-down.marker {
@@ -240,10 +252,56 @@ body {
   color: #232323;
 }
 
+.cart-goods-big__cgb-flex {
+  min-width: 14.3125em;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-goods-l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-goods-l__h3 {
+  font-family: "Lato";
+  font-size: 0.75em;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.cart-goods-l__content {
+  margin-left: 0.875em;
+  padding-top: 0.625em;
+}
+
+.cart-goods-l__p {
+  font-family: "Lato";
+  font-size: 0.75em;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f16d7f;
+  margin-top: 0.75em;
+}
+
+.close-button {
+  border: none;
+  background-color: transparent;
+}
+
 .rating-area {
   overflow: hidden;
-  width: 265px;
-  margin: 0 auto;
+  width: 3.5em;
+  margin: 0;
 }
 
 .rating-area:not(:checked) > input {
@@ -252,11 +310,11 @@ body {
 
 .rating-area:not(:checked) > label {
   float: right;
-  width: 15px;
+  width: 11px;
   padding: 0;
   cursor: pointer;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1.2;
   color: lightgrey;
   text-shadow: 1px 1px #bbb;
 }
@@ -286,5 +344,47 @@ body {
 
 .rate-area > label:active {
   position: relative;
+}
+
+.cart-goods-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown-divider__bottom-border {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: rgba(237, 237, 237, 0.74);
+}
+
+.fa-times-circle {
+  color: #c0c0c0;
+}
+
+.total {
+  font-family: "Lato";
+  font-size: 1em;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.total__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.button-cb {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

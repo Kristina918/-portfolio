@@ -66,11 +66,15 @@ body{
     }
     .box-goods{
        position: absolute;
-       background-color: yellow;
        width: 262px;
         height: 440px;
         border-radius: 5px;
         margin-right: 5px;
+        padding-top: 1.25em;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom:1.25em ;
+       
     }
     .goods .box-goods{
     
@@ -78,10 +82,10 @@ body{
     }
     .goods.open .box-goods{
         display: block;
-        max-width: 16.375em;
-       
-        
-        
+        max-width: 16.375em; 
+    }
+    .box-goods{
+
     }
     .form-search{
         display: flex;
@@ -140,7 +144,18 @@ body{
         padding-top: 5px;
         padding-bottom: 5px;
         border: 1px solid #f16d7f;
+    
     }
+    &--new-size{     
+        min-width: 97.85%;
+        min-height: 3.125em;
+        
+    }
+    &--new-margin{
+        margin-bottom: 0.625em;
+    }
+  
+    
 
 }
 .fa-caret-down.marker{
@@ -223,4 +238,113 @@ text-transform: uppercase;
 letter-spacing: 0.025em;
 color: #232323;
 }
-//руйтинг//@
+
+.cart-goods-big{
+   
+    &__cgb-flex{
+        min-width: 14.3125em;
+        max-height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.cart-goods-l{
+    display: flex;
+
+    &__h3{
+        @include txt-font("Lato",0.75em ,1.2 ,700 );
+        text-transform: uppercase;
+        color: #222222;
+    }
+    &__content{
+       margin-left: 0.875em;
+       padding-top: 0.625em;
+    }
+    &__p{
+        @include txt-font("Lato",0.75em ,1.2 ,400 );
+        text-transform: uppercase;
+        color: #f16d7f;      
+        margin-top: 0.75em; 
+      
+        }
+}
+.close-button{
+    border: none;
+    background-color: transparent;
+    
+
+}
+
+
+
+
+
+//stars
+.rating-area {
+	overflow: hidden;
+	width: 3.5em;
+	margin: 0;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 11px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 1.2;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+// stars
+.cart-goods-r{
+    display: flex;
+    align-items: center;
+}
+.dropdown-divider{
+    &__bottom-border{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        background-color: rgba(237,237,237,0.74);
+    }
+}
+.fa-times-circle{
+    color: #c0c0c0;
+}
+.total{
+    @include txt-font('Lato',1em ,1.2 ,700 );
+    text-transform: uppercase;
+    color: #222222;
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+.button-cb{
+    text-align: center;
+}
