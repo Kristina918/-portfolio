@@ -26,6 +26,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1.875em;
 }
 
 .header-menu__logo {
@@ -87,6 +88,11 @@ body {
 .goods.open .box-goods {
   display: block;
   max-width: 16.375em;
+}
+
+.box-goods {
+  background-color: white;
+  z-index: 1;
 }
 
 .form-search {
@@ -214,12 +220,20 @@ body {
   text-decoration: none;
 }
 
+.drop-item__big-menu {
+  color: #646464;
+}
+
 .dropdown-item {
   padding: 0;
 }
 
 .li-item {
   margin-left: 8px;
+}
+
+.li-item--margin {
+  margin-left: 0;
 }
 
 .dropdown-divider-style {
@@ -236,6 +250,14 @@ body {
 }
 
 .li-item:hover .drop-item {
+  color: #f16d7f;
+}
+
+.h-menu:hover .item {
+  color: #f16d7f;
+}
+
+.mega-menu__margin-r:hover .mega-menu__filter {
   color: #f16d7f;
 }
 
@@ -295,7 +317,7 @@ body {
 
 .close-button {
   border: none;
-  background-color: transparent;
+  background-color: white;
 }
 
 .rating-area {
@@ -361,6 +383,16 @@ body {
   background-color: rgba(237, 237, 237, 0.74);
 }
 
+.dropdown-divider__menu {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.dropdown-divider__catalog {
+  min-width: 14.6875em;
+  margin: 0;
+}
+
 .fa-times-circle {
   color: #c0c0c0;
 }
@@ -386,5 +418,94 @@ body {
 
 .button-cb {
   text-align: center;
+}
+
+.mega-menu {
+  margin-top: 1.125em;
+  position: relative;
+}
+
+.mega-menu__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.mega-menu__filter {
+  font-family: "Lato";
+  font-size: 0.875em;
+  line-height: 1.625em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.mega-menu__margin-r {
+  margin-right: 2.875em;
+}
+
+.mmb-flex {
+  display: none;
+  max-width: 52.875em;
+  padding-top: 1.25em;
+  position: absolute;
+}
+
+.mega-menu:last-child:hover .mmb-flex__right {
+  left: auto;
+  right: 0;
+}
+
+.mega-menu__kids:hover .mmb-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mega-menu__women:hover .mmb-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mega-menu__hot-deals:hover .mmb-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mega-menu__home:hover .mmb-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mmb-flex__div1 {
+  max-width: 14.6875em;
+  margin-right: 2.8125em;
+}
+
+.mega-menu-box {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.h-menu {
+  font-family: "Lato";
+  font-size: 0.875em;
+  line-height: 2em;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  margin: 0;
+}
+
+.item {
+  text-decoration: none;
+  color: #222222;
 }
 /*# sourceMappingURL=style.css.map */
