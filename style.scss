@@ -402,7 +402,10 @@ color: #232323;
     display: none;
     max-width:52.875em ;
     padding-top: 1.25em; 
+    padding-left: 1.5625em;
+    padding-right: 1.5625em;
     position: absolute;
+    background-color: white;
 
 }
 .mega-menu:last-child:hover .mmb-flex__right{
@@ -448,4 +451,49 @@ right: 0;
     color: #222222;
 }
 
+.big-section{
+    background-color: #e8e8e8;
+    min-height: 38.375em;
+}
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hs-left-box-text{
+    margin-left:0.5em ;
+}
+.hs-left-box {
+  
+    display: flex;
 
+    // .hs-left-box__strip
+
+    &__strip {
+        min-width: 0.75em;
+        min-height: 100%;
+        background-color: #f16d7f;;
+    }
+
+    // .hs-left-box__h1
+
+    &__h1 {
+        @include txt-font('Lato',3.75em ,1.2 ,900 );
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
+
+    // .hs-left-box__h3
+
+    &__h3 {
+        @include txt-font('Lato',2.5em ,1.2 ,900 );
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
+
+    // .hs-left-box__h3--color-red
+
+    &__h3--color-red {
+        color: #f16d7f ;
+    }
+}
