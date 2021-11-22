@@ -17,6 +17,7 @@ body{
     max-width: $site-width;
     width: 100%;
     margin: 0 auto;
+    
 
 }
 
@@ -616,6 +617,115 @@ right: 0;
 
         }
 }
+
+.cards-box {
+   
+
+    // .cards-box__h3-header
+
+    &__h3-header {
+        @include txt-font("Lato",1.875em ,1.2 , 700);
+        letter-spacing: 0.025em;
+        color: #222222;
+        text-align: center;
+    }
+
+    // .cards-box__p-header
+
+    &__p-header {
+        text-align: center;
+        @include txt-font("Lato",0.875em ,1.2 , 400);
+        letter-spacing: 0.025em;
+        color: #9f9f9f;
+        margin-bottom: 3.75em;
+    }
+
+    // .cards-box__grid
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: repeat(2,50%);
+        gap: 12px 10px;
+    }
+
+    // .cards-box__big-card1
+
+    &__big-card1 {
+       
+    }
+    &__card1{
+        position: relative;
+        width: 50%;
+        margin-bottom: 1em;
+        flex-wrap: wrap;
+
+    }
+    &__img-card{
+      
+    }
+
+    // .cards-box__button-bag
+
+    &__button-bag {
+        display: none;
+        min-width: 7.6875em;
+        min-height: 2.4375em;
+        background-color: transparent;
+        border: 1px solid white;
+        @include txt-font('Lato',0.8125em ,1.2 , 700);
+        color: #ffffff;
+        position: absolute;
+        top: 45%;
+        left: 55%;
+        z-index: 1;
+    }
+
+    // .cards-box__link-card
+
+    &__link-card {
+        text-decoration: none;
+        @include txt-font("Lato", 0.8125em, 1.2,400 );
+        text-transform: uppercase;
+        color: #222222;
+    }
+    &__link-card:hover{
+        color: #f16d7f
+    }
+
+    // .cards-box__p-price
+
+    &__p-price {
+        @include txt-font("Lato", 1em, 1.2,700 );
+        text-transform: uppercase;
+        color: #f16d7f;
+        margin-top: 1em;
+    }
+}
 .container {
 }
+.card-box {
 
+    // .card-box__card1
+
+    &__card1 {
+    }
+}
+.card-fa{
+    color: white;
+}
+.cards-box__card1:hover .cards-box__button-bag{
+    display: block;
+    
+}
+.cards-box__button-bag:hover{
+    color: #f16d7f;
+    border-color: #f16d7f;
+}
+.cards-box__button-bag:hover .card-fa{
+    color: #f16d7f;
+} 
+.cards-box__card1:hover .cards-box__img-card {
+    filter: brightness(40%);
+
+}
