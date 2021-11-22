@@ -825,4 +825,36 @@ body {
   -webkit-filter: brightness(40%);
           filter: brightness(40%);
 }
+
+.button-pink {
+  min-width: 13.25em;
+  min-height: 3em;
+  background-color: #f16d7f;
+  color: #ffffff;
+  border: 1px solid #f16d7f;
+}
+
+.button-pink:hover {
+  background-color: white;
+  color: #f16d7f;
+}
+
+.button-pink:hover .fa-big {
+  color: #f16d7f;
+}
+
+.fa-big {
+  color: #ffffff;
+}
+
+.big-button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4.875em;
+  margin-bottom: 7.0625em;
+}
 /*# sourceMappingURL=style.css.map */
