@@ -753,5 +753,136 @@ right: 0;
     justify-content: center;
     margin-top:4.875em ;
     margin-bottom:  7.0625em;
+
+}
+.additional-information {
+
+    // .additional-information__left-box-grid
+
+    &__left-box-grid {
+        display: grid;
+        background-color:#222224 ;
+        grid-template-columns: 69% 31%;
+        grid-template-rows: repeat(3, 11.1em) ;
+    }
+
+    // .additional-information__left-box
+
+    &__left-box {
+        position: absolute;
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    // .additional-information__a-big-foto
+
+    &__a-big-foto {
+    }
+
+    // .additional-information__big-foto
+
+    &__big-foto {
+        
+    }
+
+    // .additional-information__position
+
+    &__position {
+        max-width: 19.3125em;
+        position: relative;
+        z-index: 1;
+        top: 8em;
+        left: 2.1875em;
+      
+    }
+
+    // .additional-information__h3
+
+    &__h3 {
+        font-family: "Lato";
+font-size: 53.7px;
+line-height: 1.2;
+font-weight: 700;
+letter-spacing: 0.025em;
+color: #ffffff;
+    }
+
+    // .additional-information__h3--red
+
+    &__h3--red {
+        color: #f16d7f;
+    }
+
+    // .additional-information__p
+
+    &__p {
+        @include txt-font("Lato", 2.0125em ,1.2 , 700);
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        
+    }
+
+    // .additional-information__right-box
+
+    &__right-box1 {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        margin-top: 48px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    &__right-box2{
+        padding-left: 2.3em;
+        padding-right: 2.5em;
+        margin-top: 48px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    &__right-box3{
+        padding-left: 2.3em;
+        padding-right: 2.5em;
+        margin-top: 48px;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    &__right-box1-flex{
+        display: flex;
+        align-items: top;
+        justify-content: center;
+     
+    }
+    &__l-rb{
+        margin-right:  2em;
+        &--right{
+            margin-right: 2em;
+        }
+        &--right1{
+            margin-right: 2.5em;
+        }
+    }
+    &__rb-h4{
+        @include txt-font("Lato", 1.25em ,1.2 ,700 );
+        letter-spacing: 0.025em;
+        color: #fbfbfb;
+
+    }
+    &__r-rb{
+       
+    }
+    &__rb-p{
+       
+        @include txt-font("Lato", 0.875em ,1.5em ,300 );
     
+        letter-spacing: 0.025em;
+        color: #fbfbfb;
+    }
+}
+.link{
+    text-decoration: none;
+}
+.link:hover .additional-information__rb-h4  {
+    color: #f16d7f;
+}
+.link:hover .additional-information__rb-p {
+    color: #f16d7f;
 }
