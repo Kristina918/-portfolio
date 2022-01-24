@@ -702,8 +702,7 @@ right: 0;
         margin-top: 1em;
     }
 }
-.container {
-}
+
 .cards-box {
 
 
@@ -885,4 +884,174 @@ color: #ffffff;
 }
 .link:hover .additional-information__rb-p {
     color: #f16d7f;
+}
+.background-footer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+   text-align: center;
+    margin-top: 5.9375em;
+}
+
+.footer {
+    height: 100% ;
+    
+    &__flex-review{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 6.875em;
+        
+    }
+    &__img-review{
+        max-width: 5.1875em ;
+        max-height: 5.1875em;
+    }
+   
+  
+
+		// .footer__grid
+
+		&__grid {
+            position: absolute;
+            top: 0%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 27.375em);
+            
+            
+		}
+
+		// .footer__grid-left
+
+		&__grid-left {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            
+            max-width: 35.625em ;
+            border-right: solid 1px #f9f9f9;
+		}
+
+		// .footer__grid-right
+
+		&__grid-right {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            
+            max-width: 35.625em ;
+            padding-top: 25%;
+                    
+		}
+        &__review-p1{
+            max-width:24.125em;
+            text-align: left, !important;
+            color: #222224;
+            margin-bottom: 18px;
+            font-family: "Lato";
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.025em;
+        }
+        &__review-p2{
+
+            padding-top: 18px;
+            &--red{
+                color: #f16d7f;
+            
+            }
+        }
+    &__input-h3{
+        @include txt-font("Lato",1.5em ,0.625em,400 );
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222224;
+
+    }
+    &__input-h4{
+        @include txt-font("Lato",0.875em ,1.5em ,400 );
+        text-transform: none;
+        letter-spacing: 0.025em;
+        color: #222224;
+
+    }
+        
+            
+}
+.block1 {
+
+    // .block1__red
+
+    &__red {
+
+    }
+}
+.block-bottom-big{
+    max-width: 8.75em;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 7.8em;
+    margin-top: 1.375em;
+}
+.block1 {
+    width: 2.375em;
+    height: 0.25em;
+   background-color: #d6d6d6;
+  
+
+    // .block1__color-block
+
+    &__color-block {
+        width: 2.375em;
+    height: 0.25em;
+        background-color: #f16d7f;
+    }
+}
+
+.form-email-big-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.form-email {
+   
+    &__input{
+        max-width: 17.625em;
+    min-height: 2.875em;
+    border-top-left-radius: 1.4375em;
+border-bottom-left-radius: 1.4375em;
+padding-left: 24px;
+background-color: #e1e1e1;
+border-color: #e1e1e1;
+    }
+    &__submit-button{
+        max-width: 6.5em;
+        min-height: 2.875em;
+        border-top-right-radius: 1.4375em;
+        border-bottom-right-radius: 1.4375em;
+        background-color: #f16d7f;
+        font-size: 14px;
+        line-height: 42px;
+font-weight: 400;
+        padding-right:20px ;
+        padding-left: 10px;
+        border-color: #f16d7f;
+
+        text-align: center;
+
+font-weight: 400;
+letter-spacing: 0.025em;
+color: #ffffff;
+        
+        
+    }
+
+
+		// .form-email__submit
+
+		&__submit {
+            font-size: 14px;
+            
+		}
 }
