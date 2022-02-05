@@ -1383,5 +1383,14 @@ color: #898989;
     // .product-description__price-p
 
     &__price-p {
+        @include txt-font("Lato",1.5em ,1.5em ,700 );
+        color: #ef5b70;
+        margin-bottom: 2.6875em;
+    }
+    &__hr{
+        max-width: 40.125em;
+        height: 1px;
+        background-color: #cccccc;
+        border: 1px solid #eaeaea;
     }
 }
