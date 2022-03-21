@@ -659,6 +659,12 @@ right: 0;
         grid-template-rows: repeat(2,50%);
         gap: 12px 10px;
     }
+    &__grid-catalog-page {
+        display: grid;
+        grid-template-columns: repeat(3,33.2%);
+        grid-template-rows: repeat(2,50%);
+        gap: 12px 10px;
+    }
 
     // .cards-box__big-card1
 
@@ -746,6 +752,11 @@ right: 0;
     background-color: #f16d7f;
     color: #ffffff;
     border: 1px solid #f16d7f;
+    &__catalog-page{
+        min-height:  2.75em;
+        min-width: 9.375em;
+        
+    }
 }
 .button-pink:hover{
     background-color: white;
@@ -762,6 +773,12 @@ right: 0;
     justify-content: center;
     margin-top:4.875em ;
     margin-bottom:  7.0625em;
+    &__catalog-page{
+        display:  flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 44px;
+    }
 
 }
 .additional-information {
@@ -885,6 +902,15 @@ color: #ffffff;
         letter-spacing: 0.025em;
         color: #fbfbfb;
     }
+    &__box-catalog-page-info{
+        max-width: 19.5em;
+    }
+    &__a-catalog-page{
+        display: inline-block;
+        height: 44px;
+        margin-bottom: 1.375em;
+      
+    }
 }
 .link{
     text-decoration: none;
@@ -901,6 +927,10 @@ color: #ffffff;
     position: relative;
    text-align: center;
     margin-top: 5.9375em;
+    &__margin-none{
+        margin-top: 0;
+
+    }
 }
 
 .footer {
@@ -1213,7 +1243,9 @@ color: #898989;
 }
 
 // страница продукта
-
+.breadcrumb-box__box-r-info:hover{
+    color: #000000;
+}
 .breadcrumb-box {
     display: flex;
     align-items: center;
@@ -1502,3 +1534,356 @@ color: #ef5b70;
     color: white;
     background-color: #ef5b70;
 }
+
+//страница каталога
+.left-menu {
+    min-width:15.1875em ;
+    height: 100%;
+
+    // .left-menu__summary
+
+    &__summary {
+    }
+
+    // .left-menu__box-1
+
+    &__box-1 {
+    }
+
+    // .left-menu__ul
+
+    &__ul {
+        list-style-type: none;
+    }
+
+    // .left-menu__li
+
+    &__li {
+    }
+
+    // .left-menu__a
+
+    &__a {
+        text-decoration: none;
+        font-family: "Lato";
+        @include txt-font("Lato", 0.875em , 2.0625em,400 );
+        color: #6f6e6e;
+    }
+}
+.left-menu__li:hover .left-menu__a{
+    color: #ef5b70;
+}
+.left-menu__summary{
+    display: block;
+    cursor: pointer;
+    @include txt-font("Lato", 0.875em,1.25em ,700 );
+    text-transform: uppercase;
+    color: #6f6e6e;
+    max-width:15.1875em ;
+    min-height:2.3125em ;
+    border-left: 5px solid #ef5b70;
+    border-bottom:1px solid #ebebeb;
+    padding-left: 0.75em;
+    align-items: center;
+    padding-top: 5px;
+    
+
+}
+.left-menu__details .left-menu__summary::-webkit-details-marker {
+    display: none;
+}
+.left-menu__summary::after{
+    content:"\25be";
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: bold;
+   float:right ;
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 0;
+
+  
+}
+
+.left-menu__details[open] .left-menu__summary::after{
+    content: "\25b4";
+    color: #ef5b70;
+
+}
+.left-menu__details[open] .left-menu__summary{
+    color: #ef5b70;
+}
+.big-container {
+    width: 100%;
+    margin-top:4.375em ;
+
+
+    // .big-container__flex
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+      
+    }
+}
+.right-menu {
+    width: 53em;
+    height: 100%;
+    &__h5{
+        @include txt-font("Lato", 0.875em ,1.25em ,700 );
+        text-transform: uppercase;
+        color: #6f6e6e;
+    }
+    &__form-checkbox{
+        display: inline-block;
+        justify-content: space-around;
+    }
+    &__checkbox-input{
+        width: 0.8125em;
+        height: 0.8125em;
+        background-color: #ffffff;
+        border: 1px solid #ebebeb;
+        appearance: none;
+        transition: 0.2s all linear;
+        margin-right: 7px;
+  
+    }
+    &__checkbox-label{
+        font-family: "Lato";
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #6f6e6e;
+        
+             
+
+    }
+    &__checkbox-input:checked{
+        background-color:#ef5b70;
+        outline: 2px solid #ef5b70;
+    }
+    &__checkbox-label{
+        
+    }
+    &__grid-chb {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 21px;
+  
+        
+    }
+
+
+    // .right-menu__nav-block-big
+
+    &__nav-block-big {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .right-menu__block1
+
+    &__block1 {
+        max-width: 12em;
+    }
+
+    // .right-menu__block2
+
+    &__block2 {
+        max-width: 16em;
+    }
+
+    // .right-menu__block3
+
+    &__block3 {
+        width: 262px;
+     
+    }
+}
+.button-filter {
+   
+ 
+    font-family: "Lato";
+    font-size: 0.875em;
+    padding-right: 0.5em;
+   padding-left: 0.25em;
+    font-weight: 400;
+    color: #6f6e6e;
+    background-color: transparent;
+    border-right: 2px solid  #dfdfdf;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1em;
+
+    &--border-none{
+        border: none;
+        font-family: "Lato";
+    font-size: 14px;
+    padding-right: 8px;
+   padding-left: 4px;
+    font-weight: 400;
+    color: #6f6e6e;
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+  
+
+ 
+    
+}
+.slider-range-div{
+    margin-top: 0.875em;
+}
+.slider-span-div{
+  margin-top: 0.2em;
+    width: 262px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.slider-span{
+    display: block;
+    
+}
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    background-color: #ef5b70 ;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: none;
+    color: #ef5b70;
+}
+.ui-widget-header {
+    background-color: #ef5b70 ;
+}
+.ui-slider-horizontal{
+    height: 6px;
+}
+.ui-widget-content {
+    background: #f0f0f0;
+   
+}
+.ui-widget.ui-widget-content{
+    border: none;
+}
+.filter-catalog {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    min-height: 3.125em;
+   
+
+    // .filter-catalog__size
+
+    &__size {
+       max-width: 52.875em;
+       min-height: 3.125em;
+       background-color: #f3f3f3;
+       margin-top: 2.5em;
+       margin-bottom: 3em;
+    }
+    &__block-sort{
+        width: 4.3125em;
+        height: 30px;
+        background-color: #FFFFFF;
+        text-align: center;
+        border-right:1px solid #f3f3f3 ;
+        &--width{
+            width: 3.4375em;
+            height: 30px;
+        background-color: #FFFFFF;
+        text-align: center;
+        border-right:1px solid #f3f3f3 ;
+        margin-left:  0.625em;
+        }
+    }
+    &__p{
+        margin: 0;
+        font-family: "Lato";
+font-size: 14px;
+line-height: 26px;
+font-weight: 600;
+color: #6f6e6e;
+    }
+    &__select{
+        min-width: 5.5em;
+        height: 30px;
+        background-color: #FFFFFF;
+        text-align: left;
+        border: none;
+        font-family: "Lato";
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 600;
+        color: #6f6e6e;
+        padding-left: 8px;
+        padding-bottom: 3px;
+        &--width{
+            min-width: 3.9375em;
+            height: 30px;
+            background-color: #FFFFFF;
+            text-align: left;
+            border: none;
+            font-family: "Lato";
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 600;
+            color: #6f6e6e;
+            padding-left: 8px;
+            padding-bottom: 3px;
+
+        }
+    }
+}
+.ui-slider .ui-slider-handle {
+    z-index: 0;
+}
+.ui-slider .ui-slider-range{
+    z-index: 0;
+}
+.paginator-box-catalog-page{
+    display: block;
+    height: 44px;
+  align-items: center;
+    border: 1px solid #ebebeb;
+    &__nav{
+        height: 44px;
+        
+    }
+}
+.page-link{
+    border: none;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #c4c4c4;
+}
+.page-item:hover .page-link {
+    color: #ef5b70;
+
+}
+.page-link:active{
+    color: #ef5b70;
+}
+.info-block-catalog-page{
+    background-color: #222224;
+    min-height: 21.3125em;
+    &__box{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 21.3125em;
+    }
+}
+
+
