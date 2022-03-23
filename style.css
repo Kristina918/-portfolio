@@ -2285,11 +2285,200 @@ body {
   background-color: #ffffff;
 }
 
+.form-shopping-card {
+  margin-bottom: 5em;
+}
+
 .form-shopping-card__big-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-shopping-card__block1-h3 {
+  font-family: "Lato";
+  font-size: 1em;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 1.25em;
+}
+
+.form-shopping-card__select-country {
+  width: 22.1875em;
+  height: 2.8125em;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  padding-left: 10px;
+  margin-bottom: 1.25em;
+}
+
+.form-shopping-card__state {
+  width: 22.1875em;
+  height: 2.8125em;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  padding-left: 10px;
+  opacity: 0.7;
+  margin-bottom: 1.25em;
+}
+
+.form-shopping-card__postcode {
+  width: 22.1875em;
+  height: 2.8125em;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  padding-left: 10px;
+  opacity: 0.7;
+  margin-bottom: 1.25em;
+}
+
+.form-shopping-card__button-get-a-quote {
+  width: 100px;
+  height: 35px;
+  font-family: "Lato";
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.form-shopping-card__block2-p {
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000000;
+}
+
+.form-shopping-card__block2-input {
+  width: 22.1875em;
+  height: 2.8125em;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  padding-left: 10px;
+  opacity: 0.7;
+  margin-bottom: 1.25em;
+}
+
+.form-shopping-card__button-apply-coupon {
+  width: 118px;
+  height: 35px;
+  font-family: "Lato";
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.form-shopping-card__block3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 22.5em;
+  height: 13.375em;
+  background-color: #f5f3f3;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-shopping-card__block3-big-box {
+  width: 275px;
+}
+
+.form-shopping-card__block3-box-right {
+  text-align: right;
+}
+
+.form-shopping-card__block3-box-right-p {
+  font-family: "Lato";
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.form-shopping-card__block3-box-right-h3 {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form-shopping-card__block3-box-right--red {
+  color: #f16d7f;
+  margin-left: 1.25em;
+}
+
+.form-shopping-card__block3-box-right-p--margin {
+  margin-left: 1.25em;
+}
+
+.form-shopping-card__block3-box-right-button-checkout {
+  width: 273px;
+  height: 50px;
+  border: 1px solid #f16d7f;
+  background-color: #f16d7f;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form-shopping-card__button-get-a-quote:hover {
+  border: 1px solid #f16d7f;
+  background-color: #f16d7f;
+  color: #ffffff;
+}
+
+.form-shopping-card__button-apply-coupon:hover {
+  border: 1px solid #f16d7f;
+  background-color: #f16d7f;
+  color: #ffffff;
+}
+
+.form-shopping-card__block3-box-right-button-checkout:hover {
+  color: #f16d7f;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

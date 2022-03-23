@@ -727,7 +727,7 @@
             <div class="form-shopping-card__big-box">
                 <div class="form-shopping-card__block1">
                     <h3 class="form-shopping-card__block1-h3">Shipping Adress</h3>
-                    <select name="value">
+                    <select class="form-shopping-card__select-country" name="value">
                         <option value="BD">Bangladesh</option>
                         <option value="AF">Afghanistan</option>
                         <option value="AX">&Aring;land Islands</option>
@@ -980,12 +980,12 @@
                         <option value="ZW">Zimbabwe</option>
                     </select>
                     <div>
-                        <input type="text" class="">
+                        <input type="text" class="form-shopping-card__state" placeholder="State">
                     </div>
                     <div>
-                        <input type="text" class="">
+                        <input type="text" class="form-shopping-card__postcode" placeholder="Postcode / Zip">
                     </div>
-                    <button type="submit">get a quote</button>
+                    <button class="form-shopping-card__button-get-a-quote" type="submit">get a quote</button>
 
 
 
@@ -993,25 +993,33 @@
                 </div>
 
                 <div class="form-shopping-card__block2">
+
                     <h3 class="form-shopping-card__block1-h3">coupon discount</h3>
-                    <p>Enter your coupon code if you have one
+                    <p class="form-shopping-card__block2-p">Enter your coupon code if you have one
                     </p>
                     <div>
-                        <input type="text" class="">
+                        <input class="form-shopping-card__block2-input" type="text" class="">
                     </div>
 
-                    <button>Apply coupon</button>
+                    <button class="form-shopping-card__button-apply-coupon">Apply coupon</button>
                 </div>
 
                 <div class="form-shopping-card__block3">
+                    <div class="form-shopping-card__block3-big-box">
+                        <div class="form-shopping-card__block3-box-right">
+                            <p class="form-shopping-card__block3-box-right-p"> Sub total <span
+                                    class="form-shopping-card__block3-box-right-p--margin">$900</span> </p>
+                            <h3 class="form-shopping-card__block3-box-right-h3"> GRAND TOTAL <span
+                                    class="form-shopping-card__block3-box-right--red">$900</span></h3>
+                        </div>
 
-                    <div class="form-shopping-card__block3-box-right">
-                        <p> Sub total $900</p>
-                        <h3> GRAND TOTAL <span>$900</span></h3>
+                        <hr>
+                        <button class="form-shopping-card__block3-box-right-button-checkout" type="submit">proceed to
+                            checkout</button>
+
                     </div>
 
-                    <hr>
-                    <button type="submit">proceed to checkout</button>
+
 
 
                 </div>
