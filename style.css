@@ -2365,6 +2365,21 @@ body {
   background-color: #ffffff;
 }
 
+.form-shopping-card__button-get-a-quote--width {
+  width: 180px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  height: 50px;
+}
+
+.form-shopping-card__button-get-a-quote--margin {
+  margin-top: 32px;
+}
+
 .form-shopping-card__block2-p {
   font-family: "Lato";
   font-size: 14px;
@@ -2457,6 +2472,12 @@ body {
   height: 50px;
   border: 1px solid #f16d7f;
   background-color: #f16d7f;
+}
+
+.form-shopping-card__block3-box-right-button-checkout-a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
   font-family: "Lato";
   font-size: 16px;
   line-height: 1.2;
@@ -2478,7 +2499,200 @@ body {
 }
 
 .form-shopping-card__block3-box-right-button-checkout:hover {
-  color: #f16d7f;
   background-color: #ffffff;
+}
+
+.form-shopping-card__block3-box-right-button-checkout:hover a {
+  color: #f16d7f;
+}
+
+.checkout-box__details .checkout-box__summary::-webkit-details-marker {
+  display: none;
+}
+
+.checkout-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 18px;
+  margin-bottom: 78px;
+  padding-right: 162px;
+}
+
+.checkout-box__form-2 {
+  width: 390px;
+}
+
+.checkout-box__form-1 {
+  margin-left: 35px;
+}
+
+.checkout-box__details {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.checkout-box__summary {
+  display: block;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-box__h3 {
+  display: inline-block;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+}
+
+.checkout-box__p {
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+  margin-bottom: 0;
+}
+
+.checkout-box__p--margin {
+  margin-bottom: 30px;
+}
+
+.checkout-box__p--margin-14 {
+  margin-bottom: 14px;
+}
+
+.checkout-box__p--margin-40 {
+  margin-bottom: 40px;
+}
+
+.checkout-box__p-3 {
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.checkout-box__input-radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 2px solid #555555;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.checkout-box__input-radio:checked {
+  background: #ef5b70;
+  background-size: 8px;
+}
+
+.checkout-box__box-radio-input {
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.checkout-box__input-checkout-label {
+  font-family: "Lato";
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.checkout-box__input-checkout-label--margin {
+  margin-bottom: 20px;
+}
+
+.checkout-box__control-label {
+  font-family: "Lato";
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #222222;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.checkout-box__required {
+  font-family: "Lato";
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ff0d0d;
+}
+
+.checkout-box__email-address {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding-left: 10px;
+  font-family: "Lato";
+  font-size: 13.5px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.checkout-box__password {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding-left: 10px;
+  font-family: "Lato";
+  font-size: 13.5px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.checkout-box__p-2 {
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ff0d0d;
+  margin-top: 18px;
+}
+
+.checkout-box__a {
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #222222;
+  text-decoration: none;
+  margin-left: 32px;
+}
+
+.checkout-box__a:active {
+  color: #ef5b70;
+}
+
+.checkout-box__a:hover {
+  color: #ef5b70;
+}
+
+.fa-angle-double-right {
+  margin-right: 4px;
 }
 /*# sourceMappingURL=style.css.map */
